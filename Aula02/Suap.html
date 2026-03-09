@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suap</title>
+    <link rel="stylesheet" href="lindeza.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav class="nave-espacial">
+            <div class="logo">
+                <h1>suap</h1>
+                <!--Não sei como colocar o números-->
+                <i class="fa-solid fa-bell"></i>
+            </div>
+
+            <div class="perfil">
+                <img src="//admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/07/foto-inusitada-cachorro-vieler-18.jpg?w=1320&h=742&crop=0m" alt="Foto">
+                <span>José Vinícius</span>
+                <!--Aqui teria que separa mais como assim esta mais facil então fiz assim, aquele ditado esta funcionando então não mexe kkk-->
+                <i class="fa-solid fa-user"></i>
+            </div>
+            
+            <!--símbolo de busca não conseguir colocar, detalher fui no google pesquisar como colocar esses icone, toda class que começa com fa-alguma coisa vem de uma biblioteca de icone-->
+            <div class="busca">
+                <input type="text" placeholder="Buscar menu">
+            </div>
+
+            <ul class="menu-lista">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i> Atividades Estudantis</a></li>
+                <li><a href="#"><i class="fa-solid fa-bell-concierge"></i> Central de Serviços</a></li>
+                <li><a href="#"><i class="fa-solid fa-comments"></i> Comunicação Social</a></li>
+                <li><a href="#"><i class="fa-solid fa-file-contract"></i> Documentos/Processos</a></li>
+                <li><a href="#"><i class="fa-solid fa-chalkboard-user"></i> Ensino</a></li>
+                <li><a href="#"><i class="fa-solid fa-briefcase"></i> Extensão</a></li>
+                <li><a href="#"><i class="fa-solid fa-globe"></i> Pesquisa</a></li>
+                <li><a href="#"><i class="fa-solid fa-heart-pulse"></i> Saúde</a></li>
+                <li><a href="#"><i class="fa-solid fa-desktop"></i> Tec. da Informação</a></li>
+                <!-- Professor não consegui deixa vermelho-->
+                <li class="sair"><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+
+        <main class="conteudo">
+            <div class="coluna-esquerda">
+                <div class="titulo-secao">
+                    <h2>Minhas pendências</h2>
+                </div>
+
+                <div class="alerta vermelho-claro">
+                    <div class="icone-alerta">2</div>
+                    <p>Mensagens não lidas</p>
+                </div>
+
+                <div class="alerta vermelho-claro">
+                    <div class="icone-alerta">!</div>
+                    <p>Há pré-inscrição aguardando submissão.</p>
+                </div>
+            </div>
+            <div class="coluna-direita">
+                <div class="carde">
+                    <div class="tt">
+                        <h2>Ensino</h2>
+                    </div>
+                    <hr>
+                    
+                    <div class="botoes-container">
+                        <button class="botao-cinza"><i class="fa-solid fa-user"></i> Meus Dados</button>
+                        <button class="botao-cinza"><i class="fa-solid fa-key"></i> Acesso do Responsável</button>
+                        <button class="botao-cinza"><i class="fa-regular fa-calendar"></i> Agenda de Avaliações</button>
+                        <button class="botao-cinza"><i class="fa-solid fa-magnifying-glass"></i> Locais e Horários</button>
+                        <button class="botao-cinza"><i class="fa-solid fa-magnifying-glass"></i> Meus Requerimentos</button>
+                        <button class="botao-cinza"><i class="fa-solid fa-magnifying-glass"></i> Minhas disciplinas</button>
+                    </div>
+                </div>
+
+                <div class="carde">
+                    <div class="tt">
+                        <h2>Calendário Acadêmico</h2>
+                    </div>
+                    <hr>
+
+                    <div class="calendario-area">
+                        <h3>Fevereiro</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sab</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td><td>23</td><td><b>24</b></td><td>25</td><td>26</td><td>27</td><td>28</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="legendas">
+                            <p class="legenda laranja">De 2/2 a 25/4: 1ª Etapa</p>
+                            <p class="legenda verde">Dia 2: Espaço Pedagógico</p>
+                            <p class="legenda azul">De 6/2 a 16/2: Período para Cert.</p>
+                            <p class="legenda amarelo">De 6/2 a 16/2: Período para Trancamento</p>
+                        </div>
+
+                        <button class="botao-cinza botao-largo">Calendário Completo</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

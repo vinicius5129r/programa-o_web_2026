@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f4f5;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.nave-espacial {
+    width: 260px;
+    background-color: #1f1f1f;
+    color: #b0b0b0;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.perfil {
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.perfil img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.busca input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #555;
+    padding: 8px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.menu-lista {
+    list-style: none;
+}
+
+.menu-lista li a {
+    display: block;
+    padding: 12px 0;
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu-lista li a:hover {
+    color: white;
+}
+
+.menu-lista li a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.sair {
+    color: #d32f2f;
+}
+
+/* --- ESTILO DO CONTEÚDO PRINCIPAL --- */
+.conteudo {
+    flex: 1; /* Ocupa o resto da tela */
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.coluna-esquerda {
+    width: 35%;
+}
+
+.coluna-direita {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-secao {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.tt h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Estilo dos Alertas (Pendências) */
+.alerta {
+    background-color: #fcdcdc;
+    padding: 2px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 13px;
+    color: #333;
+}
+
+.icone-alerta {
+    background-color: #d32f2f;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Estilo das Caixas Brancas (Cards) */
+.carde {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+/* Estilo dos Botões */
+.botoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.botao-cinza {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #444;
+    font-size: 13px;
+}
+
+.botao-cinza:hover {
+    background-color: #d0d0d0;
+}
+
+/* Estilo do Calendário */
+.calendario-area {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th {
+    background-color: #e0e0e0;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #faeadd;
+}
+
+.legendas {
+    text-align: left;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.legenda {
+    padding: 5px;
+    background-color: #eee;
+}
+
+.laranja { border-left: 4px solid orange; background-color: #faeadd; }
+.verde { border-left: 4px solid green; background-color: #d4efdf; }
+.azul { border-left: 4px solid blue; background-color: #d6eaf8; }
+.amarelo { border-left: 4px solid gold; background-color: #fcf3cf; }
+
+.botao-largo {
+    width: 100%;
+    margin-top: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="conteiner"> <!-- Container para centralizar o conteúdo -->
+        <h2>Cadastro! &#128515;</h2>
+        <form action="#" method="post" nome="cadastro"> <!-- Formulário com método POST(significa que os dados serão enviados para o servidor) -->
+            <div class="linha"> <!-- Linha para agrupar os campos de nome e sobrenome -->
+                <div class="grupo" style="flex: 1"> <!-- Grupo para o campo de nome -->
+                    <label >Nome</label>
+                    <input type="text" placeholder="Digite seu nome"/> <!-- Campo de texto para o nome com um placeholder para orientar o usuário -->
+                </div>
+                <div class="grupo" style="flex: 1"> <!-- Grupo para o campo de sobrenome -->
+                    <label >Sobrenome</label>
+                    <input type="text" placeholder="Digite seu sobrenome"/> <!-- Campo de texto para o sobrenome com um placeholder para orientar o usuário -->
+                </div>
+            </div>
+            <div class="grupo"> <!-- Grupo para o campo de email -->
+                <label >Email</label>
+                <input type="email" placeholder="Digite seu email"/> <!-- Campo de email para o usuário inserir seu endereço de email, com um placeholder para orientação -->
+            </div>
+            <div class="grupo"> <!-- Grupo para o campo de telefone -->
+                <label >Telefone</label>
+                <input type="tel" placeholder="Digite seu telefone"/> <!-- Campo de telefone para o usuário inserir seu número de telefone, com um placeholder para orientação -->
+            </div>
+            <div class="grupo"> <!-- Grupo para o campo de tipo de cadastro -->
+                <label>Tipo de Cadastro</label>
+                <select> <!-- Campo de seleção para o tipo de cadastro -->
+                    <option>Selecione</option>
+                    <option value="aluno">Aluno</option>
+                    <option value="professor">Professor</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+            </div>
+            <div class="grupo"> <!-- Grupo para o campo de mensagem -->
+                <label>Mensagem</label>
+                <textarea placeholder="Digite sua mensagem"></textarea> <!-- Campo de texto para o usuário inserir uma mensagem, com um placeholder para orientação -->
+            </div>
+            <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+        </form>
+    </div>
+</body>
+</html>

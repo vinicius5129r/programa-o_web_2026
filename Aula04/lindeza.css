@@ -1,0 +1,28 @@
+body {
+  margin: 0; /* Remove a margem padrão do navegador */
+  font-family:
+    Arial, Helvetica, sans-serif; /* Define a fonte para o corpo do documento */
+  display: flex; /* Define o layout como flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  height: 100vh; /* Define a altura do corpo para ocupar toda a altura da janela de visualização */
+  background: linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #21556b
+  ); /* Define um gradiente de fundo para a página */
+}
+
+.conteine {
+    padding: 0px;
+    display: flex;
+    gap: 20px;
+  width: 100%; /* Define a largura do container para ocupar toda a largura disponível */
+  max-width: 500px; /* Define a largura máxima do container para 500 pixels */
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao container para dar profundidade */
+}
+
+.esquerda-card {
+    background: linear-gradient(#36d1dc, #5b86e5);
+}

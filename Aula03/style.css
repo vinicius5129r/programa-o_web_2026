@@ -1,0 +1,103 @@
+/* Estilos para a página de formulário */
+body {
+  margin: 0; /* Remove a margem padrão do navegador */
+  font-family:
+    Arial, Helvetica, sans-serif; /* Define a fonte para o corpo do documento */
+  display: flex; /* Define o layout como flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  height: 100vh; /* Define a altura do corpo para ocupar toda a altura da janela de visualização */
+  background: linear-gradient(
+    135deg,
+    #4e73df,
+    #1cc88a
+  ); /* Define um gradiente de fundo para a página */
+}
+
+/* Estilos para o container do formulário */
+.conteiner {
+  background: #ffffff; /* Define a cor de fundo do container como branco */
+  padding: 30px; /* Adiciona um preenchimento interno de 30 pixels */
+  border-radius: 15px; /* Adiciona bordas arredondadas ao container */
+  width: 100%; /* Define a largura do container para ocupar toda a largura disponível */
+  max-width: 500px; /* Define a largura máxima do container para 500 pixels */
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao container para dar profundidade */
+}
+/* Estilos para o título do formulário */
+h2 {
+  text-align: center; /* Centraliza o texto do título */
+  margin-bottom: 20px; /* Adiciona uma margem inferior ao título */
+}
+/* Estilos para o formulário */
+form {
+  display: flex; /* Define o layout do formulário como flexbox */
+  gap: 15px; /* Adiciona um espaçamento entre os elementos do formulário */
+  flex-direction: column; /* Organiza os elementos do formulário em uma coluna */
+}
+
+/* Estilos para as linhas do formulário */
+.grupo {
+  display: flex; /* Define o layout do grupo como flexbox */
+  flex-direction: column; /* Organiza os elementos do grupo em uma coluna */
+}
+
+/* Estilos para as linhas que agrupam os campos de nome e sobrenome */
+.linha {
+  display: flex; /* Define o layout da linha como flexbox */
+  gap: 10px; /* Adiciona um espaçamento entre os elementos da linha */
+}
+
+/* Estilos para os rótulos dos campos do formulário */
+label {
+  font-size: 14px; /* Define o tamanho da fonte para os rótulos */
+  margin-bottom: 5px; /* Adiciona uma margem inferior aos rótulos */
+  color: #555; /* Define a cor do texto dos rótulos */
+}
+
+/* Estilos para os campos de entrada, seleção e área de texto do formulário */
+input,
+select,
+textarea {
+  padding: 10px; /* Adiciona um preenchimento interno de 10 pixels para os campos de entrada, seleção e área de texto */
+  border-radius: 8px; /* Adiciona bordas arredondadas aos campos de entrada, seleção e área de texto */
+  border: 1px solid #ccc; /* Define uma borda cinza clara para os campos de entrada, seleção e área de texto */
+  font-size: 14px; /* Define o tamanho da fonte para os campos de entrada, seleção e área de texto */
+  transition: 0.3s; /* Adiciona uma transição suave para as mudanças de estilo nos campos de entrada, seleção e área de texto */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4e73df; /* Altera a cor da borda para um tom de azul quando o campo estiver em foco */
+  outline: none; /* Remove o contorno padrão do navegador */
+  box-shadow: 0 0 5px rgba(78, 115, 223, 0.5); /* Adiciona uma sombra ao redor do campo em foco para destacar */
+}
+
+textarea {
+  resize: none; /* Impede que a área de texto seja redimensionada pelo usuário */
+  height: 80px; /* Define uma altura fixa para a área de texto */
+}
+
+button {
+  padding: 12px; /* Adiciona um preenchimento interno de 12 pixels para o botão */
+  border-radius: 8px; /* Adiciona bordas arredondadas ao botão */
+  border: none; /* Remove a borda padrão do botão */
+  background: #4e73df; /* Define a cor de fundo do botão como um tom de verde */
+  color: #ffffff; /* Define a cor do texto do botão como branco */
+  font-size: 14px; /* Define o tamanho da fonte para o texto do botão */
+  cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+  transition: 0.3s; /* Adiciona uma transição suave para as mudanças de estilo no botão */
+}
+
+button:hover {
+  background: #2e59d9; /* Altera a cor de fundo do botão para um tom mais escuro quando o mouse estiver sobre ele */
+  box-shadow: 0 0 5px rgba(78, 115, 223, 0.5); /* Adiciona uma sombra ao redor do botão quando o mouse estiver sobre ele */
+  color: #9b0909; /* Mantém a cor do texto do botão como branco quando o mouse estiver sobre ele */
+  font-size: 20px;
+}
+
+@media (max-width: 480px) {
+  .linha {
+    flex-direction: column; /* Altera a direção dos elementos da linha para coluna em telas menores */
+  }
+}
