@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Início do código JavaScript
+      let nome = prompt("Entre com seu nome:"); // Solicita ao usuário que insira seu nome
+      alert("O nome informado é: " + nome); // Exibe um alerta com o nome informado
+      console.log("O nome informado é: " + nome); // Imprime o nome informado no console do navegador
+      let hora = Number(prompt("Entre com a hora:")); // Solicita ao usuário que insira um número e converte a entrada para um tipo numérico
+      alert("O hora informado é: " + hora); // Exibe um alerta com o hora informado
+      if (hora <= 12) {
+        // Verifica se o valor de hora é menor que 12
+        alert("Bom dia, " + nome + "!"); // Exibe um alerta de "Bom dia!" se a condição for verdadeira
+      } else if (hora > 12 && hora < 18) {
+        // Verifica se o valor de hora é menor que 18
+        alert("Boa tarde, " + nome + "!"); // Exibe um alerta de "Boa tarde!" se a condição for verdadeira
+      } else {
+        // Caso contrário, ou seja, se hora for 18 ou maior
+        alert("Boa noite, " + nome + "!"); // Exibe um alerta de "Boa noite!"
+      }
+    </script>
+  </body>
+</html>

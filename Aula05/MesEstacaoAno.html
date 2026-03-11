@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mês e Estação do Ano</title>
+  </head>
+  <body>
+    <script>
+      // Solicita ao usuário que insira um número correspondente a um mês e determina a estação do ano
+      let mes = Number(prompt("Entre com o número do mês (1-12):"));
+
+      if (mes >= 1 && mes <= 3) {
+        alert("Estamos no verão quente.");
+      } else if (mes >= 4 && mes <= 6) {
+        alert("Estamos no outono morte as folhas.");
+      } else if (mes >= 7 && mes <= 9) {
+        alert("Estamos no inverno frio.");
+      } else if (mes >= 10 && mes <= 12) {
+        alert("Estamos na primavera viva as folhas.");
+      } else {
+        alert(
+          "Número de mês inválido. Por favor, insira um número entre 1 e 12.",
+        );
+      }
+    </script>
+  </body>
+</html>

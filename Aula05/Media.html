@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Média</title>
+  </head>
+  <body>
+    <script>
+      // Calcule a media de 4 notas e de parabens caso o aluno tenha media maior ou igual a 6
+      let nota1 = Number(prompt("Entre com a primeira nota:"));
+      let nota2 = Number(prompt("Entre com a segunda nota:"));
+      let nota3 = Number(prompt("Entre com a terceira nota:"));
+      let nota4 = Number(prompt("Entre com a quarta nota:"));
+
+      let media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+      if (media >= 6) {
+        alert("Parabéns, você foi aprovado!");
+        alert("Sua média é: " + media);
+      } else {
+        alert("Você foi reprovado, seu burro!");
+        alert("Sua média é: " + media);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diga o maior número</title>
+  </head>
+  <body>
+    <script>
+      // Solicita ao usuário que insira dois números e determina qual é o maior
+      let numero1 = Number(prompt("Entre com o primeiro número:"));
+      let numero2 = Number(prompt("Entre com o segundo número:"));
+
+      if (numero1 > numero2) {
+        alert("O maior número é: " + numero1);
+      } else if (numero2 > numero1) {
+        alert("O maior número é: " + numero2);
+      } else {
+        alert("Os números são iguais.");
+      }
+    </script>
+  </body>
+</html>
