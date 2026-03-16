@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laco de Repetição</title>
+  </head>
+  <body>
+    <!-- Construa um  algoritmo que receba um número inteiro e verifique se o mesmo é primo -->
+    <script>
+      numero = parseInt(
+        prompt("Digite um número inteiro para verificar se é primo: "),
+      );
+      let primo = true;
+      if (numero <= 1) {
+        primo = false;
+      } else {
+        for (i = 2; i < numero; i++) {
+          if (numero % i === 0) {
+            primo = false;
+            break;
+          }
+        }
+      }
+      if (primo) {
+        alert(numero + " é um número primo.");
+      } else {
+        alert(numero + " não é um número primo.");
+      }
+    </script>
+  </body>
+</html>

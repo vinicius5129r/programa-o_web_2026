@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laço de Repetição</title>
+  </head>
+  <body>
+    <!-- Entre com 2 números e mostre a contagem do menor para o maior -->
+    <script>
+      alert("Entre com 2 números e descubra a contagem do menor para o maior.");
+      numero1 = parseInt(prompt("Digite o primeiro número: "));
+      numero2 = parseInt(prompt("Digite o segundo número: "));
+      if (numero1 < numero2) {
+        for (i = numero1; i <= numero2; i++) {
+          alert(i);
+        }
+      } else if (numero2 < numero1) {
+        for (i = numero2; i <= numero1; i++) {
+          alert(i);
+        }
+      } else {
+        alert("Os números são iguais.");
+      }
+    </script>
+  </body>
+</html>
