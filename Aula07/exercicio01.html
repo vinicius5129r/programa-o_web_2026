@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 1</title>
+  </head>
+  <body>
+    <script>
+      let positivos = 0;
+      let negativos = 0;
+      for (let i = 1; i <= 20; i++) {
+        let num = parseInt(prompt(`Digite o ${i}º número:`));
+        if (num > 0) {
+          positivos++;
+        } else if (num < 0) {
+          negativos++;
+        }
+      }
+      alert(
+        `Quantidade de números positivos: ${positivos}\nQuantidade de números negativos: ${negativos}`,
+      );
+    </script>
+  </body>
+</html>
