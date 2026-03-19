@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 7</title>
+  </head>
+  <body>
+    <script>
+      Idade = 0;
+      Peso = 0;
+      Altura = 0;
+
+      for (i = 0; i < 5; i++) {
+        let idade = parseInt(prompt("Digite a idade da pessoa:"));
+        let altura = parseFloat(
+          prompt("Digite a altura da pessoa (em metros):"),
+        );
+        let peso = parseFloat(prompt("Digite o peso da pessoa (em kg):"));
+
+        if (idade > 50) {
+          Idade++;
+        }
+        if (peso < 40) {
+          Peso++;
+        }
+        if (altura >= 1 && altura <= 2) {
+          Altura++;
+        }
+      }
+
+      alert(
+        `Número de pessoas com mais de 50 anos: ${Idade}\n` +
+          `Número de pessoas que pesam menos de 40kg: ${Peso}\n` +
+          `Número de pessoas com altura entre 1m e 2m: ${Altura}`,
+      );
+    </script>
+  </body>
+</html>
