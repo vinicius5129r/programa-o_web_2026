@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Função 04</title>
+  </head>
+  <body>
+    <script>
+      // Função para calcular o fatorial de um número
+      function calcularFatorial(n) {
+        if (n === 0 || n === 1) {
+          return 1;
+        } else {
+          return n * calcularFatorial(n - 1);
+        }
+      }
+      // Chamando a função para calcular o fatorial de um número
+      let numero = parseInt(
+        prompt("Digite um número para calcular o fatorial: "),
+      );
+      let fatorialResultado = calcularFatorial(numero);
+      alert("O fatorial de " + numero + " é: " + fatorialResultado);
+    </script>
+  </body>
+</html>

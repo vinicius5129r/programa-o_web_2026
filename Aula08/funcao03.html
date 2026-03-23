@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Função 03</title>
+  </head>
+  <body>
+    <script>
+      // Função para calcular a média de três números e verificar se o resultado é aprovado ou reprovado
+      function calcularMedia(a, b, c) {
+        let media = (a + b + c) / 3;
+        if (media >= 6) {
+          alert("A média é: " + media.toFixed(2) + ". Aprovado!"); // toFixed(2) para limitar a média a 2 casas decimais
+        } else {
+          alert("A média é: " + media.toFixed(2) + ". Reprovado!");
+        }
+      } // Chamando a função para calcular a média de três números
+      let num1 = parseFloat(prompt("Digite o primeiro número: "));
+      let num2 = parseFloat(prompt("Digite o segundo número: "));
+      let num3 = parseFloat(prompt("Digite o terceiro número: "));
+      calcularMedia(num1, num2, num3); // Passando os números para a função calcularMedia
+    </script>
+  </body>
+</html>
