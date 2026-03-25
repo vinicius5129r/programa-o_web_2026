@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vetor 01</title>
+  </head>
+  <body>
+    <!-- Exemplo de vetor em JavaScript -->
+    <script>
+      // Criando um vetor (array) de carros
+      let carros = ["Celta", "Onix", "Pulse", "Corolla", "HB20"];
+      console.log(carros[1]); // Acessa o elemento na posição 1 (Onix)
+
+      // Criando um vetor (array) de frutas usando o construtor Array.
+      let frutas = new Array("Manga", "Melancia", "Melão", "Mamão");
+      console.log(frutas[2]); // Acessa o elemento na posição 2 (Melão)
+
+      carros[0] = "Fusca"; // Modificando o elemento na posição 0
+      console.log(carros); // Imprime o vetor atualizado
+
+      carros.push("S10"); // Adiciona um novo elemento ao final do vetor
+      console.log(carros); // Imprime o vetor atualizado
+
+      carros.unshift("Gol", "Polo"); // Adiciona um novo elemento no início do vetor
+      console.log(carros); // Imprime o vetor atualizado
+
+      carros.pop(); // Remove o último elemento do vetor
+      console.log(carros); // Imprime o vetor atualizado
+
+      carros.shift(); // Remove o primeiro elemento do vetor
+      console.log(carros); // Imprime o vetor atualizado
+
+      carros.splice(2, 0, "Fusion"); // Adiciona um elemento na posição 2 sem remover nenhum elemento
+      console.log(carros); // Imprime o vetor atualizado
+
+      carros.splice(3, 3); // Remove 3 elementos a partir da posição 3
+      console.log(carros); // Imprime o vetor atualizado
+
+      let meninas = [
+        "Mariane",
+        "Lais",
+        "Maria",
+        "Maísa",
+        "Juliana",
+        "Graziele",
+        "Fabrine",
+        "Ana",
+        "Estefaly",
+        "Ester",
+      ];
+      let meninos = [
+        "José",
+        "Rafael",
+        "Lucas",
+        "Davi",
+        "Kedson",
+        "Gabriel",
+        "Gabriel A.",
+      ];
+      console.log(meninas); // Imprime o vetor de meninas
+      console.log(meninos); // Imprime o vetor de meninos
+
+      // Combina os dois vetores de meninas e meninos em um novo vetor de alunos(concatena os vetores)
+      let alunos = meninas.concat(meninos); // Combina os dois vetores em um novo vetor
+      console.log(alunos); // Imprime o vetor combinado de alunos
+
+      frutas2 = frutas.slice(); // Cria uma cópia do vetor fruta
+      console.log(frutas2); // Imprime a cópia do vetor fruta
+
+      let consulta = frutas.indexOf("Melancia"); // Verifica a posição do elemento "Melancia" no vetor fruta
+      console.log(consulta); // Imprime a posição do elemento (ou -1 se não encontrado)
+
+      let consulta2 = frutas.indexOf("Pera"); // Verifica a posição do elemento "Pera" no vetor fruta
+      console.log(consulta2); // Imprime a posição do elemento (ou -1 se não encontrado)
+
+      let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      for (let i = 0; i < numeros.length; i++) {
+        console.log(numeros[i] * 2); // Imprime cada elemento do vetor multiplicado por 2
+      }
+      for (let i = 0; i < numeros.length; i++) {
+        console.log(numeros[i]); // Imprime cada elemento do vetor
+      }
+    </script>
+  </body>
+</html>

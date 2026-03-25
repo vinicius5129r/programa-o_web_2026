@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 02</title>
+  </head>
+  <body>
+    <script>
+      function encontrarMaiorNumero(array) {
+        if (array.length === 0) {
+          return null; // Retorna null se o array estiver vazio
+        }
+        let maior = array[0]; // Inicializa o maior número com o primeiro elemento do array
+        for (let i = 1; i < array.length; i++) {
+          if (array[i] > maior) {
+            maior = array[i]; // Atualiza o maior número encontrado
+          }
+        }
+        return maior; // Retorna o maior número encontrado
+      }
+    </script>
+  </body>
+</html>
