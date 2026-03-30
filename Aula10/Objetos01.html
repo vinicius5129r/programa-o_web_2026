@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos em JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Criando um objeto "pessoa" com propriedades como nome, idade, peso e altura
+      let pessoa = {
+        nome: "Vinícius",
+        idade: 20,
+        peso: 49,
+        altura: 1.62,
+      };
+      console.log(pessoa.nome); // Acessa a propriedade "nome" do objeto "pessoa"
+      console.log(pessoa["idade"]); // Acessa a propriedade "idade" do objeto "pessoa" usando notação de colchetes
+
+      // Criando um array de objetos "alunos", onde cada objeto representa um aluno com propriedades como nome e idade
+      let alunos = [
+        { nome: "Mariane", idade: 17 },
+        { nome: "Gustavo", idade: 16 },
+        { nome: "Maria Clara", idade: 17 },
+        { nome: "Lucas", idade: 17 },
+        { nome: "Eduardo", idade: 16 },
+        { nome: "Davi", idade: 16 },
+        { nome: "Kalyane", idade: 17 },
+        { nome: "Fabrine", idade: 17 },
+        { nome: "Graziele", idade: 16 },
+        { nome: "Gabriel", idade: 16 },
+        { nome: "José", idade: 20 },
+        { nome: "Juliana", idade: 16 },
+        { nome: "Estéfally", idade: 17 },
+        { nome: "Ana", idade: 17 },
+        { nome: "Gabriel", idade: 17 },
+      ];
+      // Utilizando o método filter para encontrar os alunos com o nome "Gabriel"
+      let n = alunos.filter(function (discentes) {
+        return discentes.nome == "Gabriel";
+      });
+      console.log(n); // Exibe o resultado do filtro, que é um array contendo os objetos dos alunos com o nome "Gabriel"
+
+      let produtos = [2000, 1580, 1000, 999, 100];
+      let desconto = produtos.map(function aplicaDesconto(valor) {
+        return valor * 0.95; // Aplica um desconto de 5% em cada valor do array "produtos"
+      });
+      console.log(desconto); // Exibe o resultado do map, que é um array contendo os valores com desconto
+    </script>
+  </body>
+</html>
