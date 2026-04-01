@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificação 02 media</title>
+    <script>
+      function calc_media(n1, n2) {
+        var media = (n1 + n2) / 2;
+        return media;
+      }
+      function resultado(form) {
+        var media = calc_media(
+          parseFloat(form.nota1.value),
+          parseFloat(form.nota2.value),
+        );
+        if (media >= 6) {
+          document.getElementById("res").innerHTML = "Aprovado";
+        } else if (media < 6 && media >= 5) {
+          document.getElementById("res").innerHTML = "Recuperação";
+        } else {
+          document.getElementById("res").innerHTML = "Reprovado";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form method="get" action="" name="meuformulario">
+      <label for="matricula">Matricula</label>
+      <input type="text" name="matricula" id="matricula" />
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" />
+      <label for="nota1">Nota 1</label>
+      <input type="text" name="nota1" id="nota1" />
+      <label for="nota2">Nota 2</label>
+      <input type="text" name="nota2" id="nota2" />
+      <button type="button" onclick="resultado(this.form)">
+        Calcular Média
+      </button>
+    </form>
+    <h1 id="res"></h1>
+    <p id="demo">Aula de Javascript prática</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = 'Olá mundo'"
+    >
+      Clique no Botão
+    </button>
+  </body>
+</html>

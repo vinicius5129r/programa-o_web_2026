@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificação 01</title>
+  </head>
+  <body onload="alert('Seja bem-vindo a nossa aula!')">
+    <!-- Exibe um alerta de boas-vindas quando a página é carregada -->
+    <script>
+      document.write("<h1>Data atual <br> </h1>"); // Escreve um título "Data atual" na página, seguido de uma quebra de linha
+      document.write(Date()); // Escreve a data e hora atual na página
+
+      function funcao1() {
+        alert("Usando a função 1"); // Exibe um alerta com a mensagem "Usando a função 1"
+      }
+
+      function mensagens(mensagem) {
+        alert(mensagem); // Exibe um alerta com a mensagem passada como argumento para a função "mensagens"
+      }
+    </script>
+
+    <button type="button" onclick="funcao1()">Clique aqui</button>
+    <button type="button" onclick="mensagens('Olá, pessoal!')">
+      Clique aqui 2
+    </button>
+  </body>
+</html>
