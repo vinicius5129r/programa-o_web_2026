@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos em JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Definindo os produtos como objetos
+      let produtos = [
+        { id: 1, nome: "Televisão", categoria: "Eletrónico" },
+        { id: 2, nome: "Geladeira", categoria: "Eletrodoméstico" },
+        { id: 3, nome: "Celular", categoria: "Eletrónico" },
+        { id: 4, nome: "Livro", categoria: "Livros" },
+        { id: 5, nome: "Computador", categoria: "Eletrónico" },
+      ];
+
+      // Filtrando produtos da categoria Eletrónico
+      let eletronicos = produtos.filter(
+        (produto) => produto.categoria === "Eletrónico",
+      );
+
+      // Exibindo os produtos no console
+      console.log("Produtos da categoria Eletrónico:");
+      eletronicos.forEach((produto) => {
+        console.log(
+          `ID: ${produto.id}, Nome: ${produto.nome}, Categoria: ${produto.categoria}`,
+        );
+      });
+    </script>
+  </body>
+</html>
