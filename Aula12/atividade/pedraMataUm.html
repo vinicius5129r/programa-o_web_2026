@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedra da Boa!</title>
+  </head>
+  <body onload="alert('Olá, eu sou a iRock a pedra de estimação!')">
+    <h1>Pedra da Boa!</h1>
+    <img
+      id="irock"
+      src="rock.png"
+      alt="Pedra iRock"
+      style="width: 200px; cursor: pointer"
+      onclick="cumprimentar()"
+    />
+
+    <script>
+      function cumprimentar() {
+        var nome = prompt("Qual é o seu nome?");
+        if (nome) {
+          alert(
+            `Fala aí, ${nome}! Tudo bem? Eu sou a iRock, a pedra de estimação!`,
+          );
+          document.getElementById("irock").src = "rock_happy.png";
+        }
+      }
+    </script>
+  </body>
+</html>
