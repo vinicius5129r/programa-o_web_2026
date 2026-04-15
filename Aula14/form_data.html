@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="data" placeholder="AAAA-MM-DD" />
+    <button onclick="formatarData()">Formatar Data</button>
+    <!-- O código JavaScript para formatar a data -->
+    <script>
+      function formatarData() {
+        let data = document.getElementById("data").value;
+        //let novaData = data.replace(/-/g, "/"); // Formata a data para AAAA/MM/DD
+        let novaData = data.replace(/(\d{4})-(\d{2})-(\d{2})/, "$3/$2/$1"); // Formata a data para DD/MM/AAAA
+        document.getElementById("data").value = novaData;
+      }
+    </script>
+  </body>
+</html>
