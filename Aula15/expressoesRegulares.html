@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expressões Regulares</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input {
+        margin-bottom: 10px;
+        display: block;
+        width: 300px;
+        padding: 8px;
+      }
+      .erro {
+        color: red;
+        font-size: 14px;
+      }
+    </style>
+
+    <script>
+      function validarFormulario() {
+        const email = document.getElementById("email").value;
+        const telefone = document.getElementById("telefone").value;
+        const cep = document.getElementById("cep").value;
+
+        const erroEmail = document.getElementById("erroEmail");
+        const erroTelefone = document.getElementById("erroTelefone");
+        const erroCep = document.getElementById("erroCep");
+
+        // Expressões regulares para validação
+        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const regexTelefone = /^\(\d{2}\)\s?\d{4,5}-\d{4}$/; // Formato: (XX) XXXXX-XXXX
+        const regexCep = /^\d{5}-\d{3}$/; // Formato: XXXXX-XXX
+        let valido = true;
+
+        // Validação do email
+        if (!regexEmail.test(email)) {
+          erroEmail.textContent = "E-mail inválido.";
+          valido = false;
+        } else {
+          erroEmail.textContent = "";
+        }
+
+        // Validação do telefone
+        if (!regexTelefone.test(telefone)) {
+          erroTelefone.textContent =
+            "Telefone inválido. Use o formato (XX) XXXXX-XXXX";
+          valido = false;
+        } else {
+          erroTelefone.textContent = "";
+        }
+
+        // Validação do CEP
+        if (!regexCep.test(cep)) {
+          erroCep.textContent = "CEP inválido.";
+          valido = false;
+        } else {
+          erroCep.textContent = "";
+        }
+
+        return valido;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Validação com Formulário</h1>
+    <div class="formulario">
+      <form id="meuFormulario" onsubmit="return validarFormulario();">
+        <label>Email:</label>
+        <input type="text" id="email" placeholder="exemplo12@gmail.com" />
+        <div class="erro" id="erroEmail"></div>
+
+        <label>Telefone:</label>
+        <input type="text" id="telefone" placeholder="(XX) XXXXX-XXXX" />
+        <div class="erro" id="erroTelefone"></div>
+
+        <label>CEP:</label>
+        <input type="text" id="cep" placeholder="XXXXX-XXX" />
+        <div class="erro" id="erroCep"></div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <script>
+      // Máscara telefone (formato: (XX) XXXXX-XXXX
+      document
+        .getElementById("telefone")
+        .addEventListener("input", function (e) {
+          let v = e.target.value.replace(/\D/g, ""); // Remove tudo que não é dígito
+          if (v.length > 11) v = v.slice(0, 11);
+          if (v.length >= 2) v = "(" + v.slice(0, 2) + ") " + v.slice(2);
+          if (v.length >= 9) v = v.slice(0, 10) + "-" + v.slice(10);
+          e.target.value = v;
+        });
+
+      // Máscara CEP (formato: XXXXX-XXX)
+      document.getElementById("cep").addEventListener("input", function (e) {
+        let v = e.target.value.replace(/\D/g, ""); // Remove tudo que não é dígito
+        if (v.length > 8) v = v.slice(0, 8);
+        if (v.length >= 5) v = v.slice(0, 5) + "-" + v.slice(5);
+        e.target.value = v;
+      });
+    </script>
+  </body>
+</html>
